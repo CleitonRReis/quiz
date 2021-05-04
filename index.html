@@ -1,102 +1,113 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <title>Quiz | Você consegue acertar qual é o filme pelo título em português de Portugal?</title>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/IMG_5335.PNG">
+    <title>Quiz - Harry Potter</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-  <div class="intro py-3 bg-primary text-center">
-    <div class="container">
-      <h2 class="text-light display-3 my-4">Quiz</h2>
+    <div class="title">
+        <h1>Quiz - Harry Potter</h1>
     </div>
-  </div>
 
-  <div class="result py-4 d-none bg-light text-center">
-    <div class="container lead">
-      <p>Você acertou <span class="text-primary display-4 p-3">0%</span>
-        do quiz
-      </p>
+    <div class="quiz">
+        <div class="container">
+            <h2>Você consegue acertar essas perguntas sobre a saga Harry Potter?</h2>
+
+            <form class="quiz-form">
+                <div class="question">
+                    <p>1 - Que feitiço Harry usou para matar Lord Voldemort?</p>
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="inputQuestion1" value="A" checked>
+                            Expelliarmus
+                        </label>
+                    </div>
+
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="inputQuestion1" value="B">
+                            Patronum Expecto
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p>2 - Na primeira reunião do Clube de Duelo, Draco Malfoy invocou qual animal com o feitiço
+                        'Serpensortia'?</p>
+
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="inputQuestion2" value="A" checked>
+                            Serpente
+                        </label>
+                    </div>
+
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="inputQuestion2" value="B">
+                            Dragão
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p>3 - “É Levi-O-sa, não…”</p>
+
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="inputQuestion3" value="A" checked>
+                            Levi-o-SA
+                        </label>
+                    </div>
+
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="inputQuestion3" value="B">
+                            LEVI-o-sa
+                        </label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p>4 - O feitiço 'Felifors' transforma um gato em um quê?</p>
+
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="inputQuestion4" value="A" checked>
+                            Chapéu
+                        </label>
+                    </div>
+
+                    <div class="option">
+                        <label>
+                            <input type="radio" name="inputQuestion4" value="B">
+                            Caldeirão
+                        </label>
+                    </div>
+                </div>
+
+                <div class="button">
+                    <button class="btn">Enviar</button>
+                </div>
+            </form>
+        </div>
     </div>
-  </div>
 
-  <div class="quiz py-4 bg-dark">
-    <div class="container">
-      <h2 class="my-5 text-white">Você consegue acertar qual é o filme pelo título em português de Portugal?</h2>
-
-      <form class="quiz-form text-light">
-        <div class="my-5">
-          <p class="lead font-weight-normal">1. "O Mal Disposto" é o nome dado para o filme:</p>
-          <div class="form-check my-2 text-white-50">
-            <label class="form-check-label">
-              <input type="radio" name="inputQuestion1" value="A" checked>
-              Psicose
-            </label>
-          </div>
-          <div class="form-check my-2 text-white-50">
-            <label class="form-check-label">
-              <input type="radio" name="inputQuestion1" value="B">
-              Meu Malvado Favorito
-            </label>
-          </div>
+    <div class="quiz-modal">
+        <div class="modal">
+            <p>Você acertou <span>0%</span> do quiz Harry Potter</p>
         </div>
-
-        <div class="my-5">
-          <p class="lead font-weight-normal">2. "O Aviso" é o nome dado para o filme de terror:</p>
-          <div class="form-check my-2 text-white-50">
-            <label class="form-check-label">
-              <input type="radio" name="inputQuestion2" value="A" checked>
-              O Grito
-            </label>
-          </div>
-          <div class="form-check my-2 text-white-50">
-            <label class="form-check-label">
-              <input type="radio" name="inputQuestion2" value="B">
-              O Chamado
-            </label>
-          </div>
-        </div>
-
-        <div class="my-5">
-          <p class="lead font-weight-normal">3. "Uma Família a Beira de um Ataque de Nervos" é o título de:</p>
-          <div class="form-check my-2 text-white-50">
-            <label class="form-check-label">
-              <input type="radio" name="inputQuestion3" value="A" checked>
-              Família do Bagulho
-            </label>
-          </div>
-          <div class="form-check my-2 text-white-50">
-            <label class="form-check-label">
-              <input type="radio" name="inputQuestion3" value="B">
-              Pequena Miss Sunshine
-            </label>
-          </div>
-        </div>
-
-        <div class="my-5">
-          <p class="lead font-weight-normal">4. "O Rei dos Gazeteiros" é o famoso filme:</p>
-          <div class="form-check my-2 text-white-50">
-            <label class="form-check-label">
-              <input type="radio" name="inputQuestion4" value="A" checked>
-              O Lobo de Wall Street
-            </label>
-          </div>
-          <div class="form-check my-2 text-white-50">
-            <label class="form-check-label">
-              <input type="radio" name="inputQuestion4" value="B">
-              Curtindo a Vida Adoidado
-            </label>
-          </div>
-        </div>
-        
-        <div class="text-center">
-          <button class="btn bg-primary text-light">Enviar</button>
-        </div>
-      </form>
     </div>
-  </div>
 
-  <script src="./app.js"></script>
+    <script src="./app.js"></script>
 </body>
+
 </html>
